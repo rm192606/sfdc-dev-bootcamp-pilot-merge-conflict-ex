@@ -2,21 +2,22 @@
 * This class is used for an example to show hot to resolve merge conflicts
 * We are forcing "breaking changes"
 */
+
 public class MyExample {
 
-    private string age;
+    private Integer age;
     private String name;
 
     private List<String> hobbies;
 
-    public MyExample(String name) {
+    public MyExample(Integer age, String name) {
         this.age = age;
         this.name = name;
         this.hobbies = new List<String>();
     }
 
     public String addHobby(String hobby) {
-        this.hobby.add(hobby);
+        this.hobbies.add(hobby);
     }
 
     public String getName() {
@@ -27,9 +28,20 @@ public class MyExample {
         this.name = name;
     }
 
+      public String getAge() {
+        return this.age;
+    }
+
+    public String setAge(String age) {
+        this.age = age;
+    }
+
     public String print() {
         System.debug('My name is ' + this.name + ' and am this many years old: ' + this.age);
         System.debug('I have the following hobbies: ' + hobbies.join(', '));
     }
 
 }
+
+
+
